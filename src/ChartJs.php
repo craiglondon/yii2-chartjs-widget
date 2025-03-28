@@ -49,7 +49,7 @@ class ChartJs extends Widget
      *             the segment differs depending on the value. This type of chart is often useful when we want to show a comparison
      *             data similar to a pie chart, but also show a scale of values for context.
      *             - "Pie" : Pie charts are probably the most commonly used chart there are. They are divided into segments, the arc
-     *             of each segment shows a the proportional value of each piece of data.
+     *             of each segment shows the proportional value of each piece of data.
      *             - "Doughnut" : Doughnut charts are similar to pie charts, however they have the centre cut out, and are therefore
      *             shaped more like a doughnut than a pie!
      */
