@@ -42,6 +42,13 @@
             "dosamigos\\chartjs\\": "src"
         }
     },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "process-timeout": 1800,
+        "sort-packages": true
+    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "branch-alias": {
