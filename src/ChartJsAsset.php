@@ -10,6 +10,7 @@
 namespace dosamigos\chartjs;
 
 use yii\web\AssetBundle;
+use yii\web\JqueryAsset;
 
 /**
  *
@@ -17,13 +18,22 @@ use yii\web\AssetBundle;
  */
 class ChartJsAsset extends AssetBundle
 {
-    public $sourcePath = null;
+    public function init(): void
+    {
+        $this->sourcePath = '@vendor/nnnick/chartjs';
 
-    public $js = [
-        'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js'
-    ];
+        $this->css = [
+            'dist/Chart.min.css',
+        ];
 
-    public $depends = [
-        'yii\web\JqueryAsset',
-    ];
+        $this->js = [
+            'dist/Chart.bundle.js',
+        ];
+
+        $this->depends = [
+            JqueryAsset::class,
+        ];
+
+        parent::init();
+    }
 }
