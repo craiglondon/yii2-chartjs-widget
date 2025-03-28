@@ -29,13 +29,13 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.3",
-        "yiisoft/yii2": "^2.0",
-        "nnnick/chartjs": "^2.9"
+        "nnnick/chartjs": "^2.9",
+        "yiisoft/yii2": "^2.0"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-master",
         "friendsofphp/php-cs-fixer": "^2.16",
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^8.5",
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {
