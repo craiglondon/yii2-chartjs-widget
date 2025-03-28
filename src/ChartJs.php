@@ -67,7 +67,7 @@ class ChartJs extends Widget
      * make sure you call the parent implementation first.
      * @throws InvalidConfigException
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         if ($this->type === null) {
@@ -81,7 +81,7 @@ class ChartJs extends Widget
     /**
      * Renders the widget.
      */
-    public function run()
+    public function run(): void
     {
         echo Html::tag('canvas', '', $this->options);
         $this->registerClientScript();
@@ -96,14 +96,12 @@ class ChartJs extends Widget
         $view = $this->getView();
         ChartJsAsset::register($view);
 
-        $config = Json::encode(
-            [
-                'type' => $this->type,
-                'data' => $this->data ?: new JsExpression('{}'),
-                'options' => $this->clientOptions ?: new JsExpression('{}'),
-                'plugins' => $this->plugins
-            ]
-        );
+        $config = Json::encode([
+            'type' => $this->type,
+            'data' => $this->data ?: new JsExpression('{}'),
+            'options' => $this->clientOptions ?: new JsExpression('{}'),
+            'plugins' => $this->plugins
+        ]);
 
         $js = ";var chartJS_$id = new Chart($('#$id'),$config);";
         $view->registerJs($js);
