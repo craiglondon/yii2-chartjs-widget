@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/yii2-chartjs-widget",
+    "name": "craiglondon/yii2-chartjs-widget",
     "description": "ChartJs widget for Yii2.",
     "type": "yii2-extension",
     "keywords": [
@@ -22,8 +22,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/2amigos/yii2-chartjs-widget/issues",
-        "source": "https://github.com/2amigos/yii2-chartjs-widget"
+        "issues": "https://github.com/craiglondon/yii2-chartjs-widget/issues",
+        "source": "https://github.com/craiglondon/yii2-chartjs-widget"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
